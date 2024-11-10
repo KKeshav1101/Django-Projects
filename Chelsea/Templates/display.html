@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Squad List</title>
+    </head>
+    <body>
+        <h1>
+            Squad List
+        </h1>
+        <hr>
+        <table border="1">
+            <tr>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>DOB</td>
+                <td>Age</td>
+                <td>Position</td>
+                <td>Nationality</td>
+            </tr>
+            {% for i in items %}
+            <tr>
+                <td>{{ i.firstname }}</td>
+                <td>{{ i.lastname }}</td>
+                <td>{{ i.dob }}</td>
+                <td>{{ i.age }}</td>
+                <td>{{ i.position }}</td>
+                <td>{{ i.country }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    <a href="/home">Go Back</a>
+    </body>
+</html>

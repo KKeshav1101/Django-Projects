@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>
+            Search Player
+        </title>
+    </head>
+    <body>
+        <h1>Search Player</h1>
+        <hr>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Search">
+        </form>
+        <a href="/home">Go Back</a>
+    </body>
+</html>

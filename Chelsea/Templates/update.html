@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>
+            Update Player Details
+        </title>
+    </head>
+    <body>
+        <h1>Update Player Details</h1>
+        <hr>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Update">
+        </form>
+        <a href="/home">Go Back</a>
+    </body>
+</html>
