@@ -1,0 +1,23 @@
+<html>
+    <head><title>Faculty List</title></head>
+    <body>
+        <head>
+            Faculty List
+        </head>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>Faculty ID</td>
+                <td>Dept</td>
+            </tr>
+            {% for i in items %}
+            <tr>
+                <td>{{ i.name }}</td>
+                <td>{{ i.fid }}</td>
+                <td>{{ i.dept }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    <a href="/home">Go Back Home</a>
+    </body>
+</html>

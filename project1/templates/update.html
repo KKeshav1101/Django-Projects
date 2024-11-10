@@ -1,0 +1,11 @@
+<html>
+    <head><title>Update Faculty Details</title></head>
+    <body>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Update">
+        </form>
+    <a href="/home">Back to Home</a>
+    </body>
+</html>

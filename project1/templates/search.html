@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Search Faculty</title>
+    </head>
+    <body>
+
+        <form method="post">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" value="Search">
+        </form>
+    <a href="/home">Back to Home</a>
+    </body>
+</html>
